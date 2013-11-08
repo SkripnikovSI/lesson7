@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Name"/>
+    <EditText
+            android:id="@+id/dialog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:inputType="text"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Link"/>
+    <EditText
+            android:id="@+id/dialog_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:inputType="text"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Encoding"/>
+    <EditText
+            android:id="@+id/dialog_encoding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:inputType="text"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/dialog_cancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCancel"
+                android:text="Cancel">
+        </Button>
+        <Button
+                android:id="@+id/dialog_delete"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDelete"
+                android:text="Delete">
+        </Button>
+        <Button
+                android:id="@+id/dialog_change"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickChange"
+                android:text="Change">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
